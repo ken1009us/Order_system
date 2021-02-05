@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from .models import Commodity
+from .models import Good
 
 
-@admin.register(Commodity)
-class CommodityAdmin(admin.ModelAdmin):
+@admin.register(Good)
+class GoodAdmin(admin.ModelAdmin):
     list_display = (
         'product_name',
         'platform',
