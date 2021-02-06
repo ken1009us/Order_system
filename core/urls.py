@@ -20,6 +20,7 @@ from django.urls import include, path
 api_urlpatterns = [
     path('user/', include('apps.users.urls')),
     path('good/', include('apps.goods.urls')),
+    path('order/', include('apps.orders.urls')),
 ]
 
 # access admin to visit the backend of Django
