@@ -34,7 +34,6 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 AUTH_USER_MODEL = 'users.User'
 
-# Add apps (orders, users)
 DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,6 +47,7 @@ THIRD_PARTY_APPS = [
     'django_extensions',
 ]
 
+# Add apps (orders, users, goods)
 LOCAL_APPS = [
     'apps.users',
     'apps.goods',
