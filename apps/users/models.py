@@ -3,5 +3,5 @@ from django.db import models
 
 
 class User(AbstractUser):
-    email = models.EmailField()
-    sex = models.CharField(max_length=20, default='Male')
+    email = models.EmailField(null=True, blank=True)
+    sex = models.CharField(max_length=20, null=True, blank=True)
